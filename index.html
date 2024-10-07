@@ -16,9 +16,10 @@
         header {
             background-color: #1e90ff;
             color: white;
-            padding: 60px 0;
-            text-align: center;
-            position: relative;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         header img {
             border-radius: 50%;
@@ -26,17 +27,15 @@
             height: 150px;
             object-fit: cover;
             border: 5px solid white;
-            position: absolute;
-            top: 30px;
-            left: 50%;
-            transform: translateX(-50%);
+            margin-right: 20px; 
         }
         header h1 {
-            margin-top: 90px;  /* Adjust for the image height */
+            margin: 0;
             font-size: 2.5em;
         }
         header p {
             font-size: 1.2em;
+            margin-top: 10px;
         }
         main {
             max-width: 900px;
@@ -99,9 +98,11 @@
 <body>
 
 <header>
-    <img src="images/rosspic.jpg" alt="Ross Lauterbach Headshot">
-    <h1>Ross Lauterbach</h1>
-    <p>Data Science Graduate Student | Python | R | SQL | C++</p>
+    <img src="images/rosspic.png" alt="Ross Lauterbach Headshot">
+    <div>
+        <h1>Ross Lauterbach</h1>
+        <p>Data Scientist | Statistics Graduate Student | Educator
+    </div>
 </header>
 
 <main>
@@ -129,7 +130,7 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I'm currently pursuing a Master's in Applied Mathematics and Statistics at Hunter College, with a passion for using data to drive meaningful insights. Feel free to <a href="mailto:ross@example.com">reach out</a> or connect with me on <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>.</p>
+        <p>I'm currently pursuing a Master's in Applied Mathematics and Statistics at Hunter College, with a passion for using data to drive meaningful insights. Feel free to <a href="rosslauterbach1@gmail.com">reach out</a> or connect with me on <a href=https://www.linkedin.com/in/ross-lauterbach-81ba111b6/>LinkedIn</a>.</p>
     </section>
 </main>
 
@@ -139,5 +140,3 @@
 
 </body>
 </html>
-
-
