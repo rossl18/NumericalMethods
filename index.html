@@ -16,17 +16,23 @@
         header {
             background-color: #1e90ff;
             color: white;
-            padding: 20px 0;
+            padding: 60px 0;
             text-align: center;
+            position: relative;
         }
         header img {
             border-radius: 50%;
             width: 150px;
             height: 150px;
             object-fit: cover;
+            border: 5px solid white;
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
         }
         header h1 {
-            margin-top: 10px;
+            margin-top: 90px;  /* Adjust for the image height */
             font-size: 2.5em;
         }
         header p {
@@ -65,12 +71,20 @@
             justify-content: space-around;
             margin-top: 20px;
         }
-        .gallery img {
+        figure {
+            text-align: center;
+        }
+        figure img {
             border-radius: 8px;
             width: 100%;
             max-width: 300px;
         }
-        .gallery img:hover {
+        figure figcaption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+        figure img:hover {
             transform: scale(1.05);
             transition: transform 0.3s ease;
         }
@@ -85,7 +99,7 @@
 <body>
 
 <header>
-    <img src="images/rosspic.png">
+    <img src="images/rosspic.png" alt="Ross Lauterbach Headshot">
     <h1>Ross Lauterbach</h1>
     <p>Data Science Graduate Student | Python | R | SQL | C++</p>
 </header>
@@ -102,8 +116,14 @@
     <section id="gallery">
         <h2>Photo Gallery</h2>
         <div class="gallery">
-            <img src="images/p1.png" alt="U.S Census Bureau Seminar">
-            <img src="images/p2.jpg" alt="Poster Presentation, Binghamton University Research Days">
+            <figure>
+                <img src="images/p1.png" alt="U.S Census Bureau Seminar">
+                <figcaption>U.S Census Bureau Seminar</figcaption>
+            </figure>
+            <figure>
+                <img src="images/p2.jpg" alt="Poster Presentation, Binghamton University Research Days">
+                <figcaption>Poster Presentation, Binghamton University Research Days</figcaption>
+            </figure>
         </div>
     </section>
 
@@ -119,4 +139,5 @@
 
 </body>
 </html>
+
 
